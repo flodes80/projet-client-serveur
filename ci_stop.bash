@@ -1,0 +1,1 @@
+docker stop architcs || true && docker rm architcs || true

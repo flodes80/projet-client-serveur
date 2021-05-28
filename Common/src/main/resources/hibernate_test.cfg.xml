@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://dedi.valentincocherel.fr:3306/clientserveur_test?serverTimezone=UTC</property>
+        <property name="connection.username">dev</property>
+        <property name="connection.password">QVpghb%2h6ktx9dX</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">5</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MariaDBDialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <mapping class="fr.clientserveur.common.entities.Achat" />
+        <mapping class="fr.clientserveur.common.entities.Article" />
+        <mapping class="fr.clientserveur.common.entities.Client" />
+        <mapping class="fr.clientserveur.common.entities.Facture" />
+        <mapping class="fr.clientserveur.common.entities.Famille" />
+        <mapping class="fr.clientserveur.common.entities.Magasin" />
+        <mapping class="fr.clientserveur.common.entities.MoyenPayement" />
+        <mapping class="fr.clientserveur.common.entities.Stock" />
+
+    </session-factory>
+
+</hibernate-configuration>

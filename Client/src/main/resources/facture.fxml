@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="517.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefWidth="463.0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <children>
+            <Label fx:id="numero" layoutX="-1.0" layoutY="6.0" text="Facture N°12345" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutY="20.0" text="Daté du 03/08/2010 à 20h45" />
+            <Label fx:id="magasin" layoutY="36.0" text="Magasin centre ville" />
+            <Label fx:id="client" layoutY="1.0" text="Valentin Cocherel" AnchorPane.RightAnchor="2.0" />
+            <Label fx:id="email" layoutY="17.0" text="valentin.cocherel@gmail.com" AnchorPane.RightAnchor="2.0" />
+            <Label fx:id="adresse1" layoutY="34.0" text="14 Rue Octave Tierce" AnchorPane.RightAnchor="2.0" />
+            <Label fx:id="adresse2" layoutY="50.0" text="80080 Amiens" AnchorPane.RightAnchor="2.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="346.0" prefWidth="466.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <content>
+                  <VBox fx:id="content" prefHeight="200.0" prefWidth="100.0"></VBox>
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+      <AnchorPane prefWidth="200.0">
+         <children>
+            <HBox prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <Button fx:id="pay" mnemonicParsing="false" text="Payer">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="download" mnemonicParsing="false" text="Télécharger">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button  fx:id="back" mnemonicParsing="false" text="Retour" />
+               </children>
+            </HBox>
+            <Label fx:id="payed" layoutX="301.0" layoutY="2.0" text="Payé : 28/05/2020 12:32 (Carte Bleue)" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0" />
+            <Label fx:id="total" layoutX="376.0" layoutY="17.0" text="Total : 24,54€" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="17.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

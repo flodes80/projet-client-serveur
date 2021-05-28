@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane styleClass="menu-bar" xmlns:fx="http://javafx.com/fxml/1">
+       <children>
+         <MenuBar AnchorPane.leftAnchor="0" AnchorPane.topAnchor="0" VBox.vgrow="NEVER">
+            <menus>
+              <Menu fx:id="menu_magasin" mnemonicParsing="false" text="Magasin" />
+              <Menu fx:id="menu_stocks" mnemonicParsing="false" text="Gestion stock" />
+              <Menu fx:id="menu_factures" mnemonicParsing="false" text="Factures" />
+              <Menu fx:id="menu_affaire" mnemonicParsing="false" text="Chiffre d'affaire" />
+            </menus>
+         </MenuBar>
+         <Label fx:id="connectMenuLabel" style="-fx-text-fill: #2b2b2b; " text="Non connecté" AnchorPane.bottomAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+       </children>
+    </AnchorPane>
+
+    <AnchorPane fx:id="mainPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label fx:id="centerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="6.0" layoutY="174.0" prefHeight="27.0" prefWidth="631.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
